@@ -9,4 +9,4 @@ Personal site, personal projects, nothing fancy here. Fork the site if you want,
 ## License
 MIT
 
-**"Long Live Open-source!"**
+**"Long live open source!"**
