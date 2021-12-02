@@ -1,4 +1,4 @@
-## HinesLabs - Personal Github Page
+## Hines Labs - Personal Github Page
 
 ### Description
 _Technology and open source currated content_

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-[HinesLabs](https://github.com/hunterhines34/hineslabs) is a simple Jekyll blog with lots of customization baked in. It's a fork of [Reverie](https://github.com/amitmerchant1990/reverie) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.hineslabs.org).
+[Hines Labs](https://github.com/hunterhines34/hineslabs) is a simple Jekyll blog with lots of customization baked in. It's a fork of [Reverie](https://github.com/amitmerchant1990/reverie) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.hineslabs.org).
 
 ## Features
 
