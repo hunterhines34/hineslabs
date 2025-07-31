@@ -1,993 +1,1820 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Hines - Senior Systems Analyst | CV Resume</title>
+    <meta name="description" content="Hunter Hines - Senior Systems Analyst with 10+ years of experience in enterprise solutions architecture, system design, and implementation.">
     
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-        <link rel="canonical" href="https://hineslabs.org/">
-      
-      <link rel="icon" href="assets/images/favicon2.ico">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    
-      
-        <title>Hineslabs</title>
-      
-    
-    
-      <link rel="stylesheet" href="assets/stylesheets/main.20d9efc8.min.css">
-      
-        
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
-        
-      
-      
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
+        :root {
+            --primary-color: #64748b;
+            --secondary-color: #475569;
+            --accent-color: #94a3b8;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --sidebar-bg: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            --light-gray: #f8fafc;
+            --text-light: #f1f5f9;
+            --text-medium: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --hover-bg: #2563eb;
+        }
 
-    
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="blue">
-  
-    
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#hello-from-hineslabs" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            padding-top: 70px; /* Space for fixed nav */
+        }
 
-  
+        /* Navigation */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-<header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Hineslabs" class="md-header__button md-logo" aria-label="Hineslabs" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M41.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 41.4 86.6zM288 416h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
 
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Hineslabs
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+        .nav-logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--accent-color);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-medium);
+            transition: 0.3s;
+        }
+
+        .resume-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: var(--card-bg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            min-height: 100vh;
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            background: var(--sidebar-bg);
+            color: var(--text-light);
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--accent-color);
+            font-size: 3rem;
+            color: var(--accent-color);
+        }
+
+        .profile-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .profile-title {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .profile-location {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .sidebar-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-item i {
+            width: 20px;
+            margin-right: 1rem;
+            color: var(--accent-color);
+        }
+
+        .contact-item a {
+            color: var(--text-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--text-light);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(148, 163, 184, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .social-link:hover {
+            background: var(--hover-bg);
+            color: var(--text-light);
+            transform: translateY(-2px);
+        }
+
+        .skill-item {
+            margin-bottom: 1rem;
+        }
+
+        .skill-name {
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .skill-bar {
+            height: 6px;
+            background: rgba(148, 163, 184, 0.2);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--accent-color);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .certification-item {
+            background: rgba(148, 163, 184, 0.1);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .cert-name {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--text-light);
+        }
+
+        .cert-org {
+            color: var(--text-medium);
+            font-size: 0.8rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem;
+            background: var(--card-bg);
+        }
+
+        .header {
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .summary {
+            font-size: 1rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .summary-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stat-highlight {
+            text-align: center;
+            padding: 1rem;
+            background: var(--dark-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            min-width: 120px;
+        }
+
+        .stat-highlight .stat-number {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .stat-highlight .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-medium);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--dark-bg);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .experience-item:hover {
+            box-shadow: 0 4px 15px rgba(148, 163, 184, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        .experience-item .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .experience-details h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .company {
+            font-size: 1rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .date-location {
+            text-align: right;
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            margin-right: 2rem;
+        }
+
+        .experience-description {
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(148, 163, 184, 0.2);
+            color: var(--accent-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            background: var(--dark-bg);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 4px 15px rgba(148, 163, 184, 0.1);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .project-header {
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-description {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tech .tech-tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--text-light);
+        }
+
+        /* Education */
+        .education-item {
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: var(--dark-bg);
+        }
+
+        .education-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .education-institution {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-details {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+        }
+
+        /* Hobbies */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .hobby-card {
+            background: var(--dark-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(148, 163, 184, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        .hobby-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(148, 163, 184, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+
+        .hobby-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.8rem;
+        }
+
+        .hobby-card p {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .contact-card {
+            background: var(--dark-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px rgba(148, 163, 184, 0.1);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(148, 163, 184, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: var(--accent-color);
+            font-size: 1.3rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: var(--text-light);
+        }
+
+        /* Expandable Items */
+        .expandable-item {
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .item-header:hover {
+            opacity: 0.8;
+        }
+
+        .item-main {
+            flex: 1;
+        }
+
+        .hobby-main {
+            flex: 1;
+        }
+
+        .expand-icon {
+            margin-left: 1rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+            font-size: 1.2rem;
+            padding-top: 0.5rem;
+        }
+
+        .expandable-item.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 1.5rem;
+        }
+
+        .expandable-item.expanded .expandable-content {
+            max-height: 1000px;
+            padding: 1.5rem;
+        }
+
+        .content-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-section h4 {
+            color: var(--accent-color);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.3rem;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-section li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            position: relative;
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .content-section li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .content-section li strong {
+            color: var(--text-light);
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tech-tags .tech-tag {
+            background: rgba(148, 163, 184, 0.15);
+            color: var(--accent-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .resume-container {
+                grid-template-columns: 300px 1fr;
+                margin: 1rem;
+            }
             
-              Home
+            .main-content {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+
+            .nav-container {
+                padding: 0.8rem 1rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 60px);
+                background: rgba(30, 41, 59, 0.98);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                padding-top: 3rem;
+                transition: left 0.3s ease;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
             
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    
-  
-
-
-  <li class="md-tabs__item">
-    <a href="." class="md-tabs__link md-tabs__link--active">
-      Home
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="tutorials/" class="md-tabs__link">
-        Tutorials
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="knowledgebase/" class="md-tabs__link">
-        Knowledgebase
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="projects/" class="md-tabs__link">
-        Projects
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="downloads/" class="md-tabs__link">
-      Downloads
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="about/" class="md-tabs__link">
-      About
-    </a>
-  </li>
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
+            .resume-container {
+                grid-template-columns: 1fr;
+                margin: 0;
+                border-radius: 0;
+            }
             
-              
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="." title="Hineslabs" class="md-nav__button md-logo" aria-label="Hineslabs" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M41.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 41.4 86.6zM288 416h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
-
-    </a>
-    Hineslabs
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
-        Home
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#home-to-open-source-enthusiasts-and-technology-advocates" class="md-nav__link">
-    Home to open source enthusiasts and technology advocates
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-little-about-us" class="md-nav__link">
-    A little about us
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-use-this-site" class="md-nav__link">
-    How to use this site
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-      
-        
-          
+            .sidebar {
+                padding: 2rem 1.5rem;
+            }
             
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="tutorials/">Tutorials</a>
-          
-            <label for="__nav_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Tutorials
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+            .main-content {
+                padding: 1.5rem;
+            }
             
-          
+            .header h1 {
+                font-size: 2rem;
+            }
             
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
-      
-      
-      
-        
-          
+            .experience-item .item-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
             
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="tutorials/python/">Python</a>
-          
-            <label for="__nav_2_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Python" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          Python
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tutorials/python/python_install/" class="md-nav__link">
-        1. Python installation
-      </a>
-    </li>
-  
+            .date-location {
+                text-align: left !important;
+                margin-right: 0 !important;
+            }
 
+            .expand-icon {
+                align-self: flex-end;
+                margin-top: -2rem;
+            }
             
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tutorials/python/python_setup/" class="md-nav__link">
-        2. Environment setup
-      </a>
-    </li>
-  
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
 
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+            }
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tutorials/javascript/javascript/" class="md-nav__link">
-        Javascript
-      </a>
-    </li>
-  
+            .contact-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tutorials/markdown/markdown/" class="md-nav__link">
-        Markdown
-      </a>
-    </li>
-  
+            .summary-stats {
+                gap: 1rem;
+            }
 
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
+            .stat-highlight {
+                min-width: 100px;
+                padding: 0.8rem;
+            }
+        }
 
-    
-      
-      
-      
+        @media (max-width: 480px) {
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+        }
 
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        
-          
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
             
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="knowledgebase/">Knowledgebase</a>
-          
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Knowledgebase" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Knowledgebase
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: none;
+                background: white;
+            }
             
-          
+            .sidebar {
+                background: #374151 !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
             
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
-      
-      
-      
-        
-          
+            .main-content {
+                background: white !important;
+                color: black !important;
+            }
             
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="knowledgebase/jira/">Jira</a>
-          
-            <label for="__nav_3_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Jira" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          Jira
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="knowledgebase/jira/jira_install/" class="md-nav__link">
-        1. Jira installation
-      </a>
-    </li>
-  
+            .section-title, .header h1 {
+                color: #374151 !important;
+            }
+        }
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="knowledgebase/jira/jira_config/" class="md-nav__link">
-        2. Jira configuration
-      </a>
-    </li>
-  
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="knowledgebase/jira/jira_troubleshooting/" class="md-nav__link">
-        3. Jira troubleshooting
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="knowledgebase/rhel/rhel/" class="md-nav__link">
-        RHEL
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="knowledgebase/github/github/" class="md-nav__link">
-        Github
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
-      
-      
-      
-        
-          
-            
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="projects/">Projects</a>
-          
-            <label for="__nav_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Projects" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Projects
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
-      
-      
-      
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_4_2">
-          Jira
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Jira" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_2">
-          <span class="md-nav__icon md-icon"></span>
-          Jira
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="projects/jira/jira-post-install/" class="md-nav__link">
-        Jira Post-install
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="downloads/" class="md-nav__link">
-        Downloads
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
-        About
-      </a>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#home-to-open-source-enthusiasts-and-technology-advocates" class="md-nav__link">
-    Home to open source enthusiasts and technology advocates
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-little-about-us" class="md-nav__link">
-    A little about us
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-use-this-site" class="md-nav__link">
-    How to use this site
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-<h1 id="hello-from-hineslabs">Hello from Hineslabs!</h1>
-<h3 id="home-to-open-source-enthusiasts-and-technology-advocates">Home to open source enthusiasts and technology advocates</h3>
-<pre><code class="language-python">def say_hello():
-    print('Hello, World!')
-</code></pre>
-<hr />
-<h2 id="a-little-about-us">A little about us</h2>
-<p>Hineslabs is intended to be an easily accessible, regularly updated and always <u><strong>free</strong></u> source of technology related tips, tricks, guides and serve as an expansive knowledgebase for everthing technology related. We cover a broad range of topics related to open source projects, such as Linux, Unix and even FreeBSD. We also cover topics relating to Microsoft as well as general/advanced programming in Python, Javascript, Bash, and Powershell. Our sole mission to is provide regularly updated and always available content to our visitors free of charge. We also host some of our own internally developed applications on this website free of charge for anyone to download and use for their own purposes. All of our applications are published under the MIT license structure and will have the code available on our <a href="https://github.com/hunterhines34">Github</a> so that anyone who is willing can take a look and learn, or just simply build on top of our existing platforms.</p>
-<h2 id="how-to-use-this-site">How to use this site</h2>
-<p>Hineslabs is broken up into four relatively straightforward topics:</p>
-<ol>
-<li><a href="/tutorials/">Tutorials</a> -- An always evolving list of guides that we publish revolving our hundreds of technology centric topics.</li>
-<li><a href="/knowledgebase/">Knowledgebase</a> -- A constantly updated database of our entire knowledge dump that spans hundreds of topics. This section goes back several years.</li>
-<li><a href="/projects/">Projects</a> -- An active/inactive list of our own internally developed. These projects are all viewable on our <a href="https://github.com/hunterhines34">Github</a>.</li>
-<li><a href="/downloads/">Downloads</a> -- A full list of all of our internally developed scripts and also pre-compiled binaries that can be downloaded for free.</li>
-</ol>
-
-
-
-  
-
-
-
-                
-              </article>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Hineslabs</span>
             </div>
-          
-          
-        </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </a>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-      
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
-      
-      
-        
-        <a href="tutorials/" class="md-footer__link md-footer__link--next" aria-label="Next: Tutorials overview" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Tutorials overview
+            <ul class="nav-menu">
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
+        </div>
     </nav>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2009 - 2022 Hineslabs
+
+    <div class="resume-container" id="profile">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1 class="profile-name">Hunter Hines</h1>
+                <p class="profile-title">Senior Systems Analyst</p>
+                <div class="profile-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Duncan, Oklahoma, US</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Contact</h2>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:hunterhines34@gmail.com">hunterhines34@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="https://www.hineslabs.org" target="_blank">hineslabs.org</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/hunterhines34" class="social-link" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hunter-hines-50a440124/" class="social-link" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hunterhines34@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Core Skills</h2>
+                <div class="skill-item">
+                    <div class="skill-name">Enterprise Architecture</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">System Implementation</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Database Management</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Cloud Infrastructure</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Project Management</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Certifications</h2>
+                <div class="certification-item">
+                    <div class="cert-name">Oracle Cloud Infrastructure Associate</div>
+                    <div class="cert-org">Oracle • June 2023</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Languages</h2>
+                <div class="skill-item">
+                    <div class="skill-name">English (Native)</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header fade-in" id="profile">
+                <h1>Hunter Hines</h1>
+                <p class="subtitle">Senior Systems Analyst & Solutions Architect</p>
+                <p class="summary">
+                    Solutions-oriented Systems Analyst with 10+ years of experience designing and implementing complex enterprise systems across healthcare, financial, and automotive sectors. Proven track record of leading cross-functional teams to deliver scalable IT infrastructure, automate critical processes, and optimize system performance. Skilled in translating stakeholder requirements into technical specifications and architecture designs that align with organizational objectives.
+                </p>
+                <div class="summary-stats">
+                    <div class="stat-highlight">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Industry Sectors</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section fade-in" id="experience">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-item expandable-item">
+                    <div class="item-header" onclick="toggleExpand(this)">
+                        <div class="experience-details">
+                            <h3>Senior Systems Analyst</h3>
+                            <div class="company">Enterprise Mobility</div>
+                        </div>
+                        <div class="date-location">
+                            <div>April 2025 – Present</div>
+                            <div>St. Louis, MO</div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        Collaborate with internal business units to collect, document, and oversee project specifications, translating business requirements into technical design patterns and comprehensive solution architectures.
+                    </div>
+                    <div class="expandable-content">
+                        <div class="content-section">
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li><strong>Solution Architecture:</strong> Design and implement comprehensive technical solutions that align with business objectives and organizational standards</li>
+                                <li><strong>Data Analytics:</strong> Extract and analyze complex data from Enterprise Data Lake using advanced SQL queries and business logic frameworks</li>
+                                <li><strong>API Development:</strong> Partner with development teams to ensure API data objects and endpoints deliver expected results with thorough validation testing</li>
+                                <li><strong>Quality Assurance:</strong> Develop comprehensive Python unit test suites for internally developed API endpoints, achieving complete test coverage</li>
+                                <li><strong>Technical Support:</strong> Provide tier-2 support for end-user requests and API troubleshooting, maintaining high service availability</li>
+                                <li><strong>Agile Practices:</strong> Actively participate in daily standups, sprint retrospectives, and backlog grooming sessions</li>
+                            </ul>
+                        </div>
+                        <div class="content-section">
+                            <h4>Technical Achievements</h4>
+                            <ul>
+                                <li>Designed data validation frameworks within Databricks environment, streamlining data processing workflows</li>
+                                <li>Enhanced enterprise data quality standards through automated validation processes</li>
+                                <li>Improved team velocity and project delivery timelines through agile methodology implementation</li>
+                                <li>Reduced production defects significantly through automated quality assurance processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Azure DevOps</span>
+                        <span class="tech-tag">Databricks</span>
+                        <span class="tech-tag">Microsoft SQL Server</span>
+                        <span class="tech-tag">Teradata</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">Atlassian Suite</span>
+                        <span class="tech-tag">JFrog Artifactory</span>
+                    </div>
+                </div>
+
+                <div class="experience-item expandable-item">
+                    <div class="item-header" onclick="toggleExpand(this)">
+                        <div class="experience-details">
+                            <h3>Systems Analyst IV</h3>
+                            <div class="company">Paycom</div>
+                        </div>
+                        <div class="date-location">
+                            <div>November 2021 – April 2025</div>
+                            <div>Oklahoma City, OK</div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        Led greenfield projects and system design for software implementations. Automated infrastructure upgrades and created comprehensive disaster recovery solutions.
+                    </div>
+                    <div class="expandable-content">
+                        <div class="content-section">
+                            <h4>Major Projects & Achievements</h4>
+                            <ul>
+                                <li><strong>Infrastructure Automation:</strong> Automated Atlassian Jira Data Center upgrades using Ansible on RHEL 9, implementing fully automatic cluster configurations that reduced downtime by 80%</li>
+                                <li><strong>System Migration:</strong> Led RHEL 7 to RHEL 9 migration for enterprise solutions sub-teams, including Atlassian datacenter stack and Artifactory repositories</li>
+                                <li><strong>Disaster Recovery:</strong> Created and deployed comprehensive disaster recovery and business continuity plans for on-premise applications</li>
+                                <li><strong>Database Optimization:</strong> Designed and implemented clustered Microsoft SQL Server Availability groups with automatic failovers</li>
+                                <li><strong>Security Automation:</strong> Automated LOG4J vulnerability remediation across Microsoft SQL Servers using PowerShell, saving hundreds of man-hours</li>
+                            </ul>
+                        </div>
+                        <div class="content-section">
+                            <h4>Technical Leadership</h4>
+                            <ul>
+                                <li>Served as primary technical liaison between non-technical teams during application development lifecycles</li>
+                                <li>Conducted architectural reviews that identified risks and provided comprehensive implementation strategies</li>
+                                <li>Managed application authentication methods (OAuth, SAML, OpenID) and API endpoints with webhook environments</li>
+                                <li>Developed data-rich reports in Grafana, Splunk, and SQL Server Reporting Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Red Hat Enterprise Linux</span>
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">Atlassian Datacenter</span>
+                        <span class="tech-tag">JFrog Artifactory</span>
+                        <span class="tech-tag">Microsoft SQL Server</span>
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Splunk</span>
+                    </div>
+                </div>
+
+                <div class="experience-item expandable-item">
+                    <div class="item-header" onclick="toggleExpand(this)">
+                        <div class="experience-details">
+                            <h3>Systems Analyst II</h3>
+                            <div class="company">Duncan Regional Hospital</div>
+                        </div>
+                        <div class="date-location">
+                            <div>May 2015 – November 2021</div>
+                            <div>Duncan, OK</div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        Led team of six analysts through implementation and deployment of Meditech Ambulatory EHR across 23 rural health and specialty clinics.
+                    </div>
+                    <div class="expandable-content">
+                        <div class="content-section">
+                            <h4>Healthcare IT Leadership</h4>
+                            <ul>
+                                <li><strong>EHR Implementation:</strong> Successfully led implementation of Meditech Ambulatory EHR across 23 rural health and specialty clinics, serving over 10,000 patients</li>
+                                <li><strong>Team Management:</strong> Supervised day-to-day operations and trained team of six analysts on EHR workflows and best practices</li>
+                                <li><strong>Interface Development:</strong> Managed Meditech Greenfield API and developed custom interfaces using FHIR/HL7 standards</li>
+                                <li><strong>System Integration:</strong> Controlled HL7 data flow via Jaguar and Qvera Interface Engines for Laboratory/Radiology systems integration</li>
+                                <li><strong>Workflow Optimization:</strong> Developed new workflows and application deployment packages within Qvera Interface Engine</li>
+                            </ul>
+                        </div>
+                        <div class="content-section">
+                            <h4>Healthcare Compliance & Support</h4>
+                            <ul>
+                                <li>Ensured compliance with healthcare documentation standards and HIPAA regulations</li>
+                                <li>Updated clinical data instruction sets and health maintenance protocols according to best-practice guidelines</li>
+                                <li>Provided on-site and remote support while maintaining 99.5% system uptime</li>
+                                <li>Evaluated and remediated software-related issues, minimizing system downtime through proactive support</li>
+                                <li>Performed quarterly system upgrades and risk assessments following change management lifecycle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Meditech EHR</span>
+                        <span class="tech-tag">FHIR/HL7</span>
+                        <span class="tech-tag">Qvera Interface Engine</span>
+                        <span class="tech-tag">Jaguar Interface Engine</span>
+                        <span class="tech-tag">Windows Server</span>
+                        <span class="tech-tag">Microsoft SQL Server</span>
+                        <span class="tech-tag">PowerShell</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fade-in" id="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Vernacular</h3>
+                            <p class="project-description">
+                                The natural language programming system - An innovative approach to making programming more accessible through natural language interfaces.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Programming Languages</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hunterhines34/vernacular" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">PyTZ Buddy</h3>
+                            <p class="project-description">
+                                A Python library to convert any location to local/remote timezones, simplifying timezone management for global applications.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTZ</span>
+                                <span class="tech-tag">Timezone Management</span>
+                                <span class="tech-tag">Library Development</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hunterhines34/pytz_buddy" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Atmos CLI</h3>
+                            <p class="project-description">
+                                A command-line weather application using the Open-Meteo API, providing detailed weather information directly from the terminal.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">CLI</span>
+                                <span class="tech-tag">Open-Meteo API</span>
+                                <span class="tech-tag">Weather Data</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hunterhines34/atmos-cli" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Infrastructure Calculator</h3>
+                            <p class="project-description">
+                                A comprehensive tool for calculating infrastructure requirements and costs, helping organizations plan their IT infrastructure investments.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Infrastructure Planning</span>
+                                <span class="tech-tag">Cost Analysis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hunterhines34/infrastructure_calculator" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Community Church</h3>
+                            <p class="project-description">
+                                Community prayer requests management system built to help religious communities organize and manage prayer requests effectively.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Community Management</span>
+                                <span class="tech-tag">Web Application</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hunterhines34/communitychurch" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">HinesLabs Website</h3>
+                            <p class="project-description">
+                                A Jekyll-based technology knowledgebase featuring tutorials, project documentation, and downloadable resources for open source enthusiasts.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Jekyll</span>
+                                <span class="tech-tag">GitHub Pages</span>
+                                <span class="tech-tag">Markdown</span>
+                                <span class="tech-tag">Documentation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.hineslabs.org" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Site
+                                </a>
+                                <a href="https://github.com/hunterhines34/hineslabs" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fade-in" id="education">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item expandable-item">
+                    <div class="item-header" onclick="toggleExpand(this)">
+                        <div class="item-main">
+                            <h3>Bachelor of Science - Management Information Systems</h3>
+                            <div class="education-institution">Cameron University</div>
+                            <div class="education-details">Lawton, OK • 2011 – 2015 • GPA: 3.78</div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="expandable-content">
+                        <div class="content-section">
+                            <h4>Coursework Highlights</h4>
+                            <ul>
+                                <li><strong>Database Management Systems:</strong> Advanced SQL, database design, and optimization</li>
+                                <li><strong>Systems Analysis & Design:</strong> Requirements gathering, process modeling, and system architecture</li>
+                                <li><strong>Network Administration:</strong> TCP/IP, network security, and infrastructure management</li>
+                                <li><strong>Project Management:</strong> Agile methodologies, resource planning, and team leadership</li>
+                                <li><strong>Information Security:</strong> Risk assessment, compliance frameworks, and security protocols</li>
+                                <li><strong>Business Intelligence:</strong> Data warehousing, analytics, and reporting systems</li>
+                            </ul>
+                        </div>
+                        <div class="content-section">
+                            <h4>Academic Achievements</h4>
+                            <ul>
+                                <li>Dean's List for 6 consecutive semesters</li>
+                                <li>Senior Capstone Project: Enterprise Resource Planning system implementation</li>
+                                <li>Member of Upsilon Pi Epsilon (Computer Science Honor Society)</li>
+                                <li>Graduated Cum Laude with 3.78 GPA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item expandable-item">
+                    <div class="item-header" onclick="toggleExpand(this)">
+                        <div class="item-main">
+                            <h3>Associate of Science - Computer and Information Sciences</h3>
+                            <div class="education-institution">Connors State College</div>
+                            <div class="education-details">Warner, OK • 2009 – 2011 • GPA: 3.63</div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="expandable-content">
+                        <div class="content-section">
+                            <h4>Foundation Coursework</h4>
+                            <ul>
+                                <li><strong>Programming Fundamentals:</strong> C++, Java, and algorithm development</li>
+                                <li><strong>Computer Hardware:</strong> System architecture and hardware troubleshooting</li>
+                                <li><strong>Operating Systems:</strong> Windows and Linux administration basics</li>
+                                <li><strong>Mathematics:</strong> Calculus, Statistics, and Discrete Mathematics</li>
+                                <li><strong>Technical Communication:</strong> Documentation and presentation skills</li>
+                            </ul>
+                        </div>
+                        <div class="content-section">
+                            <h4>Notable Projects</h4>
+                            <ul>
+                                <li>Student Information Management System (Java)</li>
+                                <li>Network Configuration Lab Setup</li>
+                                <li>Database Design for Library Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fade-in" id="hobbies">
+                <h2 class="section-title">Hobbies & Technical Interests</h2>
+                
+                <div class="hobbies-grid">
+                    <div class="hobby-card expandable-item">
+                        <div class="item-header" onclick="toggleExpand(this)">
+                            <div class="hobby-main">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Open Source Development</h3>
+                                <p>Contributing to and maintaining open source projects, exploring new programming languages and frameworks.</p>
+                            </div>
+                            <div class="expand-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="content-section">
+                                <h4>Active Projects</h4>
+                                <ul>
+                                    <li><strong>Vernacular:</strong> Natural language programming system in Python</li>
+                                    <li><strong>PyTZ Buddy:</strong> Timezone conversion library for global applications</li>
+                                    <li><strong>Atmos CLI:</strong> Weather data retrieval tool using APIs</li>
+                                    <li><strong>HinesLabs:</strong> Jekyll-based knowledge sharing platform</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4>Languages & Frameworks</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Flutter/Dart</span>
+                                    <span class="tech-tag">Jekyll</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Django</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card expandable-item">
+                        <div class="item-header" onclick="toggleExpand(this)">
+                            <div class="hobby-main">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h3>Container & Orchestration</h3>
+                                <p>Building and experimenting with containerized applications, Kubernetes clusters, and microservices architecture.</p>
+                            </div>
+                            <div class="expand-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="content-section">
+                                <h4>Container Technologies</h4>
+                                <ul>
+                                    <li><strong>Docker:</strong> Multi-stage builds, compose orchestration, registry management</li>
+                                    <li><strong>Kubernetes:</strong> Cluster management, pod orchestration, service mesh</li>
+                                    <li><strong>Helm:</strong> Chart development and package management</li>
+                                    <li><strong>Docker Swarm:</strong> Legacy container orchestration</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4>Home Lab Setup</h4>
+                                <ul>
+                                    <li>3-node Kubernetes cluster running on Raspberry Pi 4s</li>
+                                    <li>GitLab CI/CD pipeline for automated deployments</li>
+                                    <li>Prometheus & Grafana monitoring stack</li>
+                                    <li>ArgoCD for GitOps workflows</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card expandable-item">
+                        <div class="item-header" onclick="toggleExpand(this)">
+                            <div class="hobby-main">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3>Workflow Automation</h3>
+                                <p>Developing automation solutions using n8n, Python scripting, and workflow orchestration tools.</p>
+                            </div>
+                            <div class="expand-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="content-section">
+                                <h4>Automation Tools</h4>
+                                <ul>
+                                    <li><strong>n8n:</strong> Visual workflow automation and API integrations</li>
+                                    <li><strong>Python Scripts:</strong> Custom automation for file processing and data migration</li>
+                                    <li><strong>PowerShell:</strong> Windows environment automation and AD management</li>
+                                    <li><strong>Ansible:</strong> Infrastructure as Code and configuration management</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4>Automation Projects</h4>
+                                <ul>
+                                    <li>Automated backup and sync workflows across cloud providers</li>
+                                    <li>Custom notification systems for infrastructure monitoring</li>
+                                    <li>Data pipeline automation for log processing</li>
+                                    <li>Development environment provisioning scripts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card expandable-item">
+                        <div class="item-header" onclick="toggleExpand(this)">
+                            <div class="hobby-main">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h3>Cloud Infrastructure</h3>
+                                <p>Exploring cloud platforms, Infrastructure as Code, and modern DevOps practices across multiple providers.</p>
+                            </div>
+                            <div class="expand-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="content-section">
+                                <h4>Cloud Platforms</h4>
+                                <ul>
+                                    <li><strong>Oracle Cloud Infrastructure:</strong> Certified Associate, compute and networking</li>
+                                    <li><strong>Azure:</strong> DevOps, Databricks, and enterprise integrations</li>
+                                    <li><strong>AWS:</strong> EC2, S3, Lambda functions, and serverless architectures</li>
+                                    <li><strong>Google Cloud:</strong> GKE, Cloud Functions, and data analytics</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4>Infrastructure Tools</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Terraform</span>
+                                    <span class="tech-tag">Pulumi</span>
+                                    <span class="tech-tag">CloudFormation</span>
+                                    <span class="tech-tag">ARM Templates</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card expandable-item">
+                        <div class="item-header" onclick="toggleExpand(this)">
+                            <div class="hobby-main">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-blog"></i>
+                                </div>
+                                <h3>Technical Writing & Knowledge Sharing</h3>
+                                <p>Creating tutorials and documentation on HinesLabs to share knowledge with the tech community.</p>
+                            </div>
+                            <div class="expand-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="content-section">
+                                <h4>Content Areas</h4>
+                                <ul>
+                                    <li><strong>Linux Administration:</strong> RHEL, Ubuntu, system optimization</li>
+                                    <li><strong>Programming Tutorials:</strong> Python, JavaScript, PowerShell guides</li>
+                                    <li><strong>Infrastructure Guides:</strong> Docker, Kubernetes, cloud deployment</li>
+                                    <li><strong>Automation Workflows:</strong> CI/CD pipelines, n8n integrations</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4>Publishing Platforms</h4>
+                                <ul>
+                                    <li>HinesLabs.org - Personal tech blog and knowledge base</li>
+                                    <li>GitHub repositories with comprehensive README documentation</li>
+                                    <li>Technical forums and community contributions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hobby-card expandable-item">
+                        <div class="item-header" onclick="toggleExpand(this)">
+                            <div class="hobby-main">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3>Continuous Learning & Certification</h3>
+                                <p>Staying current with emerging technologies, cloud platforms, and industry best practices through hands-on learning.</p>
+                            </div>
+                            <div class="expand-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="content-section">
+                                <h4>Current Focus Areas</h4>
+                                <ul>
+                                    <li><strong>Cloud Native Technologies:</strong> Service mesh, observability, security</li>
+                                    <li><strong>Machine Learning Ops:</strong> MLflow, Kubeflow, model deployment</li>
+                                    <li><strong>Security & Compliance:</strong> Zero-trust architecture, SIEM integration</li>
+                                    <li><strong>Modern Development:</strong> Microservices, event-driven architecture</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4>Learning Resources</h4>
+                                <ul>
+                                    <li>Hands-on labs and sandbox environments</li>
+                                    <li>Open source project contributions</li>
+                                    <li>Professional certification programs</li>
+                                    <li>Tech conferences and webinars</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fade-in" id="contact">
+                <h2 class="section-title">Let's Connect</h2>
+                
+                <div class="contact-content">
+                    <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 2rem; text-align: center;">
+                        I'm always interested in discussing new opportunities, innovative projects, and technology challenges. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:hunterhines34@gmail.com">hunterhines34@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/hunter-hines-50a440124/" target="_blank">Connect with me</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/hunterhines34" target="_blank">View my repositories</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Website</h3>
+                            <a href="https://www.hineslabs.org" target="_blank">HinesLabs.org</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-  
-  
-</div>
-      
-        <div class="md-social">
-  
-    
-    
-    <a href="https://github.com/hunterhines34" target="_blank" rel="noopener" title="Github - Hunter Hines" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
-  
-    
-    
-    <a href="https://www.linkedin.com/in/hunter-hines-50a440124/" target="_blank" rel="noopener" title="LinkedIn - Hunter Hines" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "toc.follow"], "search": "assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-    
-    
-      <script src="assets/javascripts/bundle.078830c0.min.js"></script>
-      
-    
-  </body>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Expandable item toggle function
+        function toggleExpand(element) {
+            const expandableItem = element.closest('.expandable-item');
+            const isExpanded = expandableItem.classList.contains('expanded');
+            
+            // Close all other expanded items in the same section
+            const section = expandableItem.closest('.section');
+            section.querySelectorAll('.expandable-item.expanded').forEach(item => {
+                if (item !== expandableItem) {
+                    item.classList.remove('expanded');
+                }
+            });
+            
+            // Toggle the clicked item
+            expandableItem.classList.toggle('expanded');
+        }
+
+        // Smooth scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            document.querySelectorAll('.section, .header').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Animate skill bars
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+
+            // Navigation active state
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section[id], header[id]');
+
+            function updateActiveNav() {
+                let current = 'profile'; // Default to profile
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            // Update active nav on scroll
+            window.addEventListener('scroll', updateActiveNav);
+            
+            // Set initial active state
+            updateActiveNav();
+        });
+
+        // Print functionality
+        function printResume() {
+            window.print();
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+                
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.offsetTop;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add hover effect to expandable items
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.expandable-item .item-header').forEach(header => {
+                header.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = 'rgba(148, 163, 184, 0.05)';
+                });
+                
+                header.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = 'transparent';
+                });
+            });
+        });
+    </script>
+</body>
 </html>
