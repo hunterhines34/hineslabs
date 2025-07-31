@@ -151,12 +151,23 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
             margin: 0 auto 1.5rem;
+            border: 4px solid var(--accent-color);
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 4px solid var(--accent-color);
+            background: var(--accent-color);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-image i {
             font-size: 3rem;
             color: var(--accent-color);
         }
@@ -950,7 +961,9 @@
         <aside class="sidebar">
             <div class="profile-section">
                 <div class="profile-image">
-                    <i class="fas fa-user"></i>
+                    <img src="./profile-photo.jpg" 
+                         alt="Hunter Hines - Senior Systems Analyst"
+                         loading="eager">
                 </div>
                 <h1 class="profile-name">Hunter Hines</h1>
                 <p class="profile-title">Senior Systems Analyst</p>
@@ -1716,8 +1729,19 @@
             expandableItem.classList.toggle('expanded');
         }
 
-        // Smooth scroll animation
+        // Add image error handling
         document.addEventListener('DOMContentLoaded', function() {
+            const profileImg = document.querySelector('.profile-image img');
+            if (profileImg) {
+                profileImg.addEventListener('error', function() {
+                    // If image fails to load, show the icon fallback
+                    this.style.display = 'none';
+                    const iconFallback = document.createElement('i');
+                    iconFallback.className = 'fas fa-user';
+                    this.parentNode.appendChild(iconFallback);
+                });
+            }
+
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
